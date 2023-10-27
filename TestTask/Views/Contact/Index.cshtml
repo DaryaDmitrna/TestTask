@@ -1,0 +1,60 @@
+﻿@model List<Contact>;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <h1>Список контактов</h1>
+
+    <h2>
+        <a asp-action="Create">Добавить контакт</a>
+    </h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].DateOfCreation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].DateOfChange)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateOfCreation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateOfChange)
+                    </td>
+                    <td>
+                        <div class="buttonTable">
+                            <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>

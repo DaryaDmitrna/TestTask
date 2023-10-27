@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "bkM/y4q73SicuecE9gc7+Z1GpzL6dr2P7EPhPUA5vLQ=",
+  "Source": "TestTask",
+  "BasePath": "_content/TestTask",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TestTask\\wwwroot",
+      "Source": "TestTask",
+      "ContentRoot": "C:\\Users\\Galina\\OneDrive\\Документы\\TestTask\\TestTask\\wwwroot\\",
+      "BasePath": "_content/TestTask",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Galina\\OneDrive\\Документы\\TestTask\\TestTask\\wwwroot\\css\\style.css",
+      "SourceId": "TestTask",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Galina\\OneDrive\\Документы\\TestTask\\TestTask\\wwwroot\\",
+      "BasePath": "_content/TestTask",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}
